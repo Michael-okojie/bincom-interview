@@ -1,0 +1,6 @@
+<form class="login-form" method="post">
+  <h4>New Polling Data</h4>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button>Create Contact</button>
+</form>

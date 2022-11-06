@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <select>
+        {{polling_results.party_abbreviation}}
+    </select>
+    {% for party in polling_results %}
+    <ul>
+        <li>{{ party.party_abbreviation }}</li>
+        <li>{{ party.party_score }}</li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
